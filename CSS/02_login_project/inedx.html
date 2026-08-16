@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Project</title>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background-color: #ba4d4d;
+            border-radius: 8px;
+            padding: 30px;
+            width: 300px;
+        }
+        h2{
+            color:wheat;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input{
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #5f5e5e;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor:copy;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Email">
+            <input type="password" class="email" placeholder="password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
