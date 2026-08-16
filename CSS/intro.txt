@@ -1,2 +1,4 @@
 --> casceding style sheet..
--->Types of css 1)Bootstrap..
+-->Types of css 1)Bootstrap..2)Tailwind CSS.. 3)Aceternity UI 4)Magic UI 5) DaisyUI 6) FlowBite 7)Ant Design
+
+--> CSS-> InLine Styling
