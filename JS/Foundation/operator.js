@@ -15,3 +15,8 @@ let num3 = 6
 
 console.log(num1 == num2) // this will print true because both values are equal
 console.log(num1 == num3) // this will print false because both values are not equal
+
+console.log(num1 != num2) // this will print false because both values are equal
+console.log(num1 != num3) // this will print true because both values are not equal
+
+ 
