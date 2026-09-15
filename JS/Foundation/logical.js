@@ -9,3 +9,9 @@ let ispaid = false
 console.log(isLoggedIn && ispaid) // this will print false because both values are not true;
 console.log(isLoggedIn || ispaid) // this will print true because at least one value is true;
 console.log(!isLoggedIn) // this will print false because the value is reversed;
+
+
+let isEmailused = true  
+let isGoogleuser = false
+
+console.log(isEmailused || isGoogleuser) // this will print false because both values are not true;
