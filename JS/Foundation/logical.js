@@ -15,3 +15,4 @@ let isEmailused = true
 let isGoogleuser = false
 
 console.log(isEmailused || isGoogleuser) // this will print false because both values are not true;
+
