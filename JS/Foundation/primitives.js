@@ -41,3 +41,13 @@ console.log(oldGreet);
 let greetMessage =  `Hello ${username} !`;
 let demoOne = `Hello ${username} !`;
 console.log(greetMessage);
+
+
+
+
+
+// symbol
+let sm1 = Symbol()
+let sm2 = Symbol()
+
+console.log(sm1 === sm2); // false
