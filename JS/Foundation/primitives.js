@@ -39,4 +39,5 @@ console.log(oldGreet);
 
 
 let greetMessage =  `Hello ${username} !`;
+let demoOne = `Hello ${username} !`;
 console.log(greetMessage);
