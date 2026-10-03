@@ -16,3 +16,8 @@ const number2 = 5;
 console.log(convertToPositive(number1));
 console.log(convertToPositive(number2));
 
+
+
+
+
+
