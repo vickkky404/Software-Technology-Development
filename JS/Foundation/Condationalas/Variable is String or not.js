@@ -8,3 +8,5 @@ if(typeof score === 'number'){
 } else{
     console.log("This is not a number");
 }
+
+
