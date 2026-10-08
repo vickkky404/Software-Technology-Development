@@ -5,10 +5,6 @@ console.log(softCopyOfPopularTeas);
 
 
 
-
-
-
-
 // let var1 = 5;
 // let var2 = var1;
 // console.log(var2); // 5
