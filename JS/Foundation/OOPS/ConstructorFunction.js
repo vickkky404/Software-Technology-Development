@@ -33,3 +33,35 @@ function Tea(type){
 }
 let lemonTea = new Tea("Lemon tea");
 console.log(lemonTea.describe());
+
+
+
+
+
+
+
+// Constructor function and prototype
+function Animal(species){
+    this.species = species;
+
+}
+Animal.prototype.sound = function(){
+    return `${this.species} makes a sound`;
+}
+
+let dog = new Animal("Dog");
+console.log(dog.sound());
+
+
+
+function Drink(name){
+    //it will work as a cheking if the new keyword is used or not.
+    if(!new.target){
+        throw new Error("Drink must be called with new keyword");
+    }
+    this.name = name;
+}
+let tea = new Drink("tea");
+
+//intentionally not using new keyword to create an object of Drink constructor function
+let coffee =  Drink("Coffee");
