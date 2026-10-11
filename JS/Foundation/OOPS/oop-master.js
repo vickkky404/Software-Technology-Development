@@ -21,4 +21,24 @@ function Person(name, age){
 
 let john = new Person("John", 30);
 
-console.log(john.name); // Output: John
+// console.log(john.name); // Output: John
+
+
+function Animal(type){
+    this.type = type;
+}
+
+Animal.prototype.speak = function(){
+    return `${this.type} makes a sound.`;
+}
+
+
+Array.prototype.myMap = function(params){
+    return `Customer method ${this}`
+};
+
+
+
+
+let myArray = [1,2,3];
+console.log(myArray.hitesh());
