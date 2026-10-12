@@ -1,0 +1,10 @@
+class calculator{
+    static add(a, b){
+        return a + b;
+    }
+}
+
+let miniCalc = new calculator()
+console.log(miniCalc.add(2, 3));
+
+//  error will occur as "TypeError: miniCalc.add is not a function"
