@@ -10,3 +10,7 @@ function fetchData(url) {
         }, 300);
     });
 }
+
+fetchData()
+    .then( (message) => {})
+    .catch( (error) => {})
