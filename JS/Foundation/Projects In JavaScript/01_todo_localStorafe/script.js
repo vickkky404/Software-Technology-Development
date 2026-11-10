@@ -3,6 +3,7 @@ const addTaskButton = document.getElementById('add-task-btn');
 const todoList = document.getElementById('todo-list');
 
 let tasks = []
+//will be storted in array 
 
 addTaskButton.addEventListener('click', () => {
     const taskText = todoInput.value.trim();
