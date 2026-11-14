@@ -1,9 +1,14 @@
-const todoInput = document.getElementById('todo-input');
+document.addEventListener('DOMContentLoaded', () => {
+    const todoInput = document.getElementById('todo-input');
 const addTaskButton = document.getElementById('add-task-btn');
 const todoList = document.getElementById('todo-list');
 
-let tasks = []
+let task = JSON.parse(localStorage.getItem('task')) || [];
 //will be storted in array 
+
+task.forEach(task => {
+    renderTask(task);
+});
 
 addTaskButton.addEventListener('click', () => {
     const taskText = todoInput.value.trim();
@@ -14,14 +19,21 @@ addTaskButton.addEventListener('click', () => {
         text: taskText,
         completed: false
     }
-    tasks.push(newTask);
+    task.push(newTask);
     saveTask();
     todoInput.value = ""; 
-    console.log(tasks);
+    console.log(task);
 });
+
+function renderTask(task){
+    console.log(task);
+}
+
 
 
 // it will save the task in the local storage
 function saveTask(){
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem('task', JSON.stringify(task));
 }
+
+})
