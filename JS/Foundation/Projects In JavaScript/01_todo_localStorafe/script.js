@@ -15,6 +15,13 @@ addTaskButton.addEventListener('click', () => {
         completed: false
     }
     tasks.push(newTask);
+    saveTask();
     todoInput.value = ""; 
     console.log(tasks);
 });
+
+
+// it will save the task in the local storage
+function saveTask(){
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
