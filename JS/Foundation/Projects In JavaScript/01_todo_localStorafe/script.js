@@ -34,7 +34,7 @@ function renderTask(task){
     todoList.appendChild(li);
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
-    li.appendChild(deleteButton);
+    
     
 }
 
