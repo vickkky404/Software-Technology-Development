@@ -32,10 +32,11 @@ function renderTask(task){
     li.textContent = task.text;
     todoList.appendChild(li);
     <button>Delete</button>
+    
 }
 
 
-    
+
 // it will save the task in the local storage
 function saveTask(){
     localStorage.setItem('task', JSON.stringify(task));
