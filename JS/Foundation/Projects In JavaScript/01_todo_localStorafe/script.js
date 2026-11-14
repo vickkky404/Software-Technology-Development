@@ -13,6 +13,7 @@ task.forEach(task => {
 addTaskButton.addEventListener('click', () => {
     const taskText = todoInput.value.trim();
     if(taskText === '') return;
+    
 
     const newTask  = {
         id: Date.now(),
@@ -31,7 +32,9 @@ function renderTask(task){
     li.setAttribute('data-id', task.id);
     li.textContent = task.text;
     todoList.appendChild(li);
-    <button>Delete</button>
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    li.appendChild(deleteButton);
     
 }
 
